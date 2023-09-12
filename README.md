@@ -27,8 +27,6 @@ EasyFood is an app that makes making food easier and gives you full information 
 
 - In this screen, user can select any of the category looks for the dish he/she likes from selected category.
 
-
-
 ## Screenshots
 
 - Splash Screen at the starting to Application.
@@ -71,23 +69,11 @@ EasyFood is an app that makes making food easier and gives you full information 
 
 ![SS11](https://github.com/sidharth-085/DishBook/assets/130606629/1e964608-057b-4742-8392-f2efd77bcae3)
 
-
-
-
-
-
-
-
 ## 🔗 Links
 
 **APK:** https://drive.google.com/file/d/1mpWaBt0SrObI0ANvurzWCdYWbffKH6i9/view?usp=sharing
 
 **API Used:** https://www.themealdb.com/api.php
-
-
-
-
-
 
 ## Tech Stack
 
@@ -104,4 +90,3 @@ EasyFood is an app that makes making food easier and gives you full information 
 - **view binding** : instead of inflating views manually view binding will take care of that.
 
 - **Glide** : Catch images and load them in imageView.
-
