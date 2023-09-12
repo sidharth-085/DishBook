@@ -31,7 +31,7 @@ EasyFood is an app that makes making food easier and gives you full information 
 
 ## Screenshots
 
-- **Screenshots of above listed screens:**
+- **Screens for which Screenshots are taken:**
 
     - Splash Screen at the starting to Application.
 
