@@ -1,7 +1,7 @@
 
 # DishBook: A Food Recipe Android Application
 
-EasyFood is an app that makes making food easier and gives you full information about the selected meal including instructions of how to make that meal provided by a video. It incldues an Home, Favorites and Categories pages.
+DishBook is an app that makes making food easier and gives you full information about the selected meal including instructions of how to make that meal provided by a video. It incldues an Home, Favorites and Categories pages.
 
 **On Home Screen**
 
