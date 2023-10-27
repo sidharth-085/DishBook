@@ -10,7 +10,7 @@
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_230sdp"
-        android:backgroundTint="@color/g_black">
+        android:backgroundTint="@color/g_black" >
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/collapsing_tool_bar"

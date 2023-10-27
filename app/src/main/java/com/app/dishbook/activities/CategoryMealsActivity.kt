@@ -12,8 +12,8 @@ import com.app.dishbook.viewModel.CategoryMealsViewModel
 
 class CategoryMealsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCategoryMealsBinding
-    lateinit var categoryMealsViewModel: CategoryMealsViewModel
-    lateinit var categoryMealsAdapter: CategoryMealsAdapter
+    private lateinit var categoryMealsViewModel: CategoryMealsViewModel
+    private lateinit var categoryMealsAdapter: CategoryMealsAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
