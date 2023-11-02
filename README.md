@@ -1,31 +1,31 @@
 
 # DishBook: A Food Recipe Android Application
 
-DishBook is an app that makes making food easier and gives you full information about the selected meal including instructions of how to make that meal provided by a video. It incldues an Home, Favorites and Categories pages.
+DishBook is an app that makes making food easier and gives you full information about the selected meal including instructions on how to make that meal provided by a video. It includes a Home, Favorites, and Categories pages.
 
 **On Home Screen**
 
-- There is Random meal Card View which changes everytime the user opens the app.
+- There is a Random meal Card View that changes every time the user opens the app.
 
-- Also, it includes most popular meals Horizontal List on which the user can swipe and select any of the popular meals. 
+- Also, it includes the most popular meals. The Horizontal List on which the user can swipe and select any of the popular meals. 
 
 - It also includes a Category Card View which displays all the categories available for different food items.
 
 **On Favorites Screen**
 
-- This screen allows user to select the favorites dishes whichever the user likes.
+- This screen allows the user to select the favorite dishes whichever the user likes.
 
-- Also, it includes swipe to delete functionality by which user can delete the item in favorites just by swiping left or right, which displays a Bottom popup saying "Meal Deleted" using Snackbar.
+- Also, it includes swipe-to-delete functionality by which the user can delete the item in favorites just by swiping left or right, which displays a Bottom popup saying "Meal Deleted" using the Snackbar.
 
 **Meals Screen**
 
-- Whenever any user touches on the meal displayed, this screen opens which include the Image of the meal along with its Recipe with complete instructions.
+- Whenever any user touches on the meal displayed, this screen opens which includes the Image of the meal along with its Recipe with complete instructions.
 
-- This screen also have the favorite button by which a dish can be marked as Favorites. Also, it has Youtube Link hyperlinked by Youtube Icon displayed in this screen.
+- This screen also has the favorite button by which a dish can be marked as Favorites. Also, it has a YouTube link hyperlinked by the YouTube icon displayed in this screen.
 
 **Categories Screen**
 
-- In this screen, user can select any of the category looks for the dish he/she likes from selected category.
+- In this screen, the user can select any of the categories and look for the dish he/she likes from the selected category.
 
 
 
@@ -33,7 +33,7 @@ DishBook is an app that makes making food easier and gives you full information 
 
 - **Screens for which Screenshots are taken:**
 
-    - Splash Screen at the starting to Application.
+    - Splash Screen at the start of the Application.
 
     - Home Screen
 
@@ -43,7 +43,7 @@ DishBook is an app that makes making food easier and gives you full information 
   - Meal Information Screen
 
 
-  - Meals according to choosen category
+  - Meals according to chosen category
 
 
   - Favorites Screen (without Favorites)
