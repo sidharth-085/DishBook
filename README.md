@@ -61,13 +61,15 @@ DishBook is an app that makes making food easier and gives you full information 
   - All Categories Screen
 
 - **All Screenshots:** https://drive.google.com/drive/folders/1f_9At9FoX6-hlCl7EWBeDoZd98xio7N6?usp=sharing
-
-
-
-
-
-
-
+  
+![1](https://github.com/sidharth-085/DishBook/assets/130606629/4880fdb1-b95b-4907-bac2-c103d3ee8621)
+<br> <br>
+![2](https://github.com/sidharth-085/DishBook/assets/130606629/c9c74f13-87c9-40e9-9adf-d3fc3ee068b9)
+<br> <br>
+![3](https://github.com/sidharth-085/DishBook/assets/130606629/2c96ac1b-02a2-429f-aabe-7f4be7d87881)
+<br> <br>
+![4](https://github.com/sidharth-085/DishBook/assets/130606629/290730c4-c805-47cb-9b4e-2af606907167)
+<br> <br>
 
 
 ## 🔗 Links
@@ -75,10 +77,6 @@ DishBook is an app that makes making food easier and gives you full information 
 **APK:** https://drive.google.com/file/d/1mpWaBt0SrObI0ANvurzWCdYWbffKH6i9/view?usp=sharing
 
 **API Used:** https://www.themealdb.com/api.php
-
-
-
-
 
 
 ## Tech Stack
