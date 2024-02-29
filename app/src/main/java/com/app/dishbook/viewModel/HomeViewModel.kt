@@ -93,9 +93,7 @@ class HomeViewModel(
             object: Callback<MealsList> {
                 override fun onResponse(call: Call<MealsList>, response: Response<MealsList>) {
                     val mealsList = response.body()!!.meals
-                    if (mealsList != null) {
-                        searchedMealsLiveData.value = mealsList
-                    }
+                    searchedMealsLiveData.value = mealsList
                 }
 
                 override fun onFailure(call: Call<MealsList>, t: Throwable) {

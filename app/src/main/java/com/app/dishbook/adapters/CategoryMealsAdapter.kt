@@ -8,6 +8,7 @@ import com.app.dishbook.dataclasses.MealsByCategory
 import com.bumptech.glide.Glide
 
 class CategoryMealsAdapter: RecyclerView.Adapter<CategoryMealsAdapter.CategoryMealsViewModel>() {
+    lateinit var onItemClick: ((MealsByCategory) -> Unit)
     private var mealsList = ArrayList<MealsByCategory>()
 
     fun setMealsList(mealsList: List<MealsByCategory>) {
@@ -35,5 +36,8 @@ class CategoryMealsAdapter: RecyclerView.Adapter<CategoryMealsAdapter.CategoryMe
         )
 
         holder.binding.tvMealName.text = mealsList[position].strMeal
+        holder.itemView.setOnClickListener {
+            onItemClick.invoke(mealsList[position])
+        }
     }
 }

@@ -1,5 +1,6 @@
 package com.app.dishbook.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
@@ -29,6 +30,8 @@ class CategoryMealsActivity : AppCompatActivity() {
         categoryMealsViewModel.observeMealLiveData().observe(this, Observer{ mealsList ->
             categoryMealsAdapter.setMealsList(mealsList)
         })
+
+        onAllDishesItemsClick()
     }
 
     private fun prepareRecyclerView() {
@@ -39,6 +42,16 @@ class CategoryMealsActivity : AppCompatActivity() {
                 1, GridLayoutManager.VERTICAL, false)
 
             adapter = categoryMealsAdapter
+        }
+    }
+
+    private fun onAllDishesItemsClick() {
+        categoryMealsAdapter.onItemClick = { meal->
+            val intent = Intent(this, MealActivity::class.java)
+            intent.putExtra(HomeFragment.MEAL_ID, meal.idMeal)
+            intent.putExtra(HomeFragment.MEAL_NAME, meal.strMeal)
+            intent.putExtra(HomeFragment.MEAL_THUMB, meal.strMealThumb)
+            startActivity(intent)
         }
     }
 }

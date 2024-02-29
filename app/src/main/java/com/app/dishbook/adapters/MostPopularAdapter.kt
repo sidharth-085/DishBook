@@ -34,7 +34,6 @@ class MostPopularAdapter: RecyclerView.Adapter<MostPopularAdapter.PopularMealVie
         holder.itemView.setOnClickListener {
             onItemClick.invoke(mealsList[position])
         }
-
     }
 
     inner class PopularMealViewHolder(val binding: PopularItemsBinding): RecyclerView.ViewHolder(binding.root)

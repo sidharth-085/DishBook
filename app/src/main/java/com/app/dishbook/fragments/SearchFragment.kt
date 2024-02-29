@@ -1,5 +1,6 @@
 package com.app.dishbook.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,9 +11,11 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.dishbook.activities.MainActivity
+import com.app.dishbook.activities.MealActivity
 import com.app.dishbook.adapters.CategoryMealsAdapter
 import com.app.dishbook.adapters.MealsAdapter
 import com.app.dishbook.databinding.FragmentSearchBinding
+import com.app.dishbook.dataclasses.MealsByCategory
 import com.app.dishbook.viewModel.HomeViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -56,6 +59,10 @@ class SearchFragment : Fragment() {
                 viewModel.searchMeals(searchQuery.toString())
             }
         }
+
+        searchMeals()
+
+        onSearchedItemsClick()
     }
 
     private fun observeSearchedMealsLiveData() {
@@ -80,4 +87,13 @@ class SearchFragment : Fragment() {
         }
     }
 
+    private fun onSearchedItemsClick() {
+        searchRecyclerViewAdapter.onItemClick = { meal->
+            val intent = Intent(activity, MealActivity::class.java)
+            intent.putExtra(HomeFragment.MEAL_ID, meal.idMeal)
+            intent.putExtra(HomeFragment.MEAL_NAME, meal.strMeal)
+            intent.putExtra(HomeFragment.MEAL_THUMB, meal.strMealThumb)
+            startActivity(intent)
+        }
+    }
 }

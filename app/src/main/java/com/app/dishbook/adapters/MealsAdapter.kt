@@ -11,7 +11,7 @@ import com.app.dishbook.dataclasses.MealsByCategory
 import com.bumptech.glide.Glide
 
 class MealsAdapter: RecyclerView.Adapter<MealsAdapter.FavoritesMealsAdapterViewHolder>() {
-    inner class FavoritesMealsAdapterViewHolder(val binding: MealItemBinding): RecyclerView.ViewHolder(binding.root)
+    lateinit var onItemClick: ((Meal) -> Unit)
 
     private val diffUtil = object: DiffUtil.ItemCallback<Meal>() {
         override fun areItemsTheSame(oldItem: Meal, newItem: Meal): Boolean {
@@ -45,5 +45,10 @@ class MealsAdapter: RecyclerView.Adapter<MealsAdapter.FavoritesMealsAdapterViewH
         Glide.with(holder.itemView).load(meal.strMealThumb).into(holder.binding.imgMeal)
         holder.binding.tvMealName.text = meal.strMeal
 
+        holder.itemView.setOnClickListener {
+            onItemClick.invoke(meal)
+        }
     }
+
+    inner class FavoritesMealsAdapterViewHolder(val binding: MealItemBinding): RecyclerView.ViewHolder(binding.root)
 }

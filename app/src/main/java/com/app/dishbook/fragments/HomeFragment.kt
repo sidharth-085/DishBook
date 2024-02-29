@@ -56,21 +56,27 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        preparePopularItemsRecyclerView()
+        // random meal card view
 
         viewModel.getRandomMeal()
         observeRandomMeal()
         onRandomMealClick()
 
+        // Popular meals recycler view
+
+        preparePopularItemsRecyclerView()
         viewModel.getPopularItems()
         observePopularItemsLiveData()
         onPopularItemsClick()
 
-        prepareCategoriesRecyclerView()
+        // categories recycler view
 
+        prepareCategoriesRecyclerView()
         viewModel.getCategories()
         observeCategories()
         onCategoriesMealClick()
+
+        // search icon click function
 
         onSearchIconClick()
     }

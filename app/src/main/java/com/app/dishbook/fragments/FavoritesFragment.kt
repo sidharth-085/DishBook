@@ -15,7 +15,6 @@ import com.app.dishbook.activities.MainActivity
 import com.app.dishbook.activities.MealActivity
 import com.app.dishbook.adapters.MealsAdapter
 import com.app.dishbook.databinding.FragmentFavoritesBinding
-import com.app.dishbook.dataclasses.MealsByCategory
 import com.app.dishbook.viewModel.HomeViewModel
 import com.google.android.material.snackbar.Snackbar
 
@@ -77,8 +76,9 @@ class FavoritesFragment : Fragment() {
         }
 
         ItemTouchHelper(itemTouchHelper).attachToRecyclerView(binding.rvFavorites)
-    }
 
+        onFavoritesItemsClick()
+    }
 
     private fun prepareRecyclerView() {
         favoritesAdapter = MealsAdapter()
@@ -89,7 +89,7 @@ class FavoritesFragment : Fragment() {
     }
 
     private fun observeFavorites() {
-        viewModel.observeFavoritesMealsLiveData().observe(requireActivity(), Observer{ meals ->
+        viewModel.observeFavoritesMealsLiveData().observe(requireActivity(), Observer { meals ->
             favoritesAdapter.differ.submitList(meals)
 
             // here I am checking that if meals size is 0, it means our favorites are
@@ -104,5 +104,15 @@ class FavoritesFragment : Fragment() {
                 binding.rvFavorites.visibility = View.INVISIBLE
             }
         })
+    }
+
+    private fun onFavoritesItemsClick() {
+        favoritesAdapter.onItemClick = { meal->
+            val intent = Intent(activity, MealActivity::class.java)
+            intent.putExtra(HomeFragment.MEAL_ID, meal.idMeal)
+            intent.putExtra(HomeFragment.MEAL_NAME, meal.strMeal)
+            intent.putExtra(HomeFragment.MEAL_THUMB, meal.strMealThumb)
+            startActivity(intent)
+        }
     }
 }
