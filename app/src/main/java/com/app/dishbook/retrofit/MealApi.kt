@@ -1,7 +1,6 @@
 package com.app.dishbook.retrofit
 
 import com.app.dishbook.dataclasses.CategoryList
-import com.app.dishbook.dataclasses.MealsByCategory
 import com.app.dishbook.dataclasses.MealsByCategoryList
 import com.app.dishbook.dataclasses.MealsList
 import retrofit2.Call

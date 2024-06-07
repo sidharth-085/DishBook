@@ -12,10 +12,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.dishbook.activities.MainActivity
 import com.app.dishbook.activities.MealActivity
-import com.app.dishbook.adapters.CategoryMealsAdapter
 import com.app.dishbook.adapters.MealsAdapter
 import com.app.dishbook.databinding.FragmentSearchBinding
-import com.app.dishbook.dataclasses.MealsByCategory
 import com.app.dishbook.viewModel.HomeViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
