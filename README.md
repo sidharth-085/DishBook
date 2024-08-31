@@ -1,66 +1,35 @@
+<div align="center">
+</br>
+<img src="https://github.com/user-attachments/assets/6cbeaad3-d05d-4c10-a73a-d155bd6f56c5" />
+</div>
 
-# DishBook: A Food Recipe Android Application
+<h1 align="center">🍔 DishBook: A Food Recipe Android Application</h1>
 
-DishBook is an app that makes making food easier and gives you full information about the selected meal including instructions on how to make that meal provided by a video. It includes a Home, Favorites, and Categories pages.
+DishBook is a mobile app that helps you discover and save recipes with step-by-step instructions and video guides. It's perfect for cooks of all levels, making meal planning and preparation simple and enjoyable.
 
-**On Home Screen**
+# 🤔 Purpose of this App
 
-- There is a Random meal Card View that changes every time the user opens the app.
+DishBook is designed to help users easily discover, save, and follow a wide variety of recipes. It aims to make meal planning and cooking more accessible and enjoyable for everyone, from beginners to experienced cooks.
 
-- Also, it includes the most popular meals. The Horizontal List on which the user can swipe and select any of the popular meals. 
+# 🧰 Features
 
-- It also includes a Category Card View which displays all the categories available for different food items.
+- **Recipe Discovery:** Explore a diverse range of recipes, each with detailed instructions and video demonstrations.
+  
+- **Favourites:** Save and organize your favorite recipes for quick access whenever needed.
 
-**On Favorites Screen**
+- **Categories:** Browse various recipe categories for easy navigation based on meal type, cuisine, or dietary preferences.
 
-- This screen allows the user to select the favorite dishes whichever the user likes.
+- **Search:** Quickly find specific recipes by entering keywords or ingredients in the search bar.
 
-- Also, it includes swipe-to-delete functionality by which the user can delete the item in favorites just by swiping left or right, which displays a Bottom popup saying "Meal Deleted" using the Snackbar.
+- **Swipe-to-Delete:** Manage your saved recipes effortlessly with a simple swipe-to-delete option.
 
-**Meals Screen**
+- **Video Integration:** Watch step-by-step video guides directly within the app to assist with recipe preparation.
+  
+- **User-Friendly Interface:** Enjoy a clean and intuitive design that makes recipe browsing and saving straightforward.
 
-- Whenever any user touches on the meal displayed, this screen opens which includes the Image of the meal along with its Recipe with complete instructions.
+- **Regular Updates:** Regularly get new recipes and app enhancements to keep your cooking experience fresh and exciting.
 
-- This screen also has the favorite button by which a dish can be marked as Favorites. Also, it has a YouTube link hyperlinked by the YouTube icon displayed in this screen.
-
-**Categories Screen**
-
-- In this screen, the user can select any of the categories and look for the dish he/she likes from the selected category.
-
-
-
-## Screenshots
-
-- **Screens for which Screenshots are taken:**
-
-    - Splash Screen at the start of the Application.
-
-    - Home Screen
-
-  - Search Screen
-
-
-  - Meal Information Screen
-
-
-  - Meals according to chosen category
-
-
-  - Favorites Screen (without Favorites)
-
-
-  - Meal Saved in Favorites Screen using Room DB
-
-
-  - List of all Favorites
-
-
-  - List of Remaining Favorites in the Favorites Screen after deleting Favorites item using Swipe Left or Right.
-
-
-  - All Categories Screen
-
-- **All Screenshots:** https://drive.google.com/drive/folders/1f_9At9FoX6-hlCl7EWBeDoZd98xio7N6?usp=sharing
+# 📱 Screenshots
   
 ![1](https://github.com/sidharth-085/DishBook/assets/130606629/4880fdb1-b95b-4907-bac2-c103d3ee8621)
 <br> <br>
@@ -71,27 +40,35 @@ DishBook is an app that makes making food easier and gives you full information 
 ![4](https://github.com/sidharth-085/DishBook/assets/130606629/290730c4-c805-47cb-9b4e-2af606907167)
 <br> <br>
 
-
-## 🔗 Links
+# 🔗 Links
 
 **APK:** https://drive.google.com/file/d/1mpWaBt0SrObI0ANvurzWCdYWbffKH6i9/view?usp=sharing
 
 **API Used:** https://www.themealdb.com/api.php
 
+# 🛠 Made With
 
-## Tech Stack
+- **Kotlin:** For building a robust and modern Android application.
 
-- **Navigation component** : One activity contains multiple fragments instead of creating multiple activities.
+- **Navigation Component:** Enables single-activity architecture with multiple fragments, simplifying navigation and reducing the need for multiple activities.
 
-- **Retrofit** : Making HTTP connection with the REST API and converting meal JSON file to Kotlin/Java object.
+- **Retrofit:** For making HTTP connections with the REST API and converting meal JSON files into Kotlin/Java objects.
 
-- **Room** : Save meals in the local database.
+- **Room Database:** For saving meals in the local database, allowing offline access to favorite recipes.
 
-- **MVVM & LiveData** : Separate logic code from views and save the state in case the screen configuration changes.
+- **MVVM & LiveData:** To separate logic from views and maintain UI state during screen configuration changes.
 
-- **Coroutines** : Do some code in the background.
+- **Coroutines:** For efficiently handling background tasks, ensuring a smooth and responsive UI.
 
-- **View Binding** : Instead of inflating views manually view binding will take care of that.
+- **View Binding:** Automates view inflation, reducing boilerplate code and improving UI management.
 
-- **Glide** : Catch images and load them in imageView.
+- **Glide:** For caching and efficiently loading images into ImageView, ensuring quick image rendering.
+
+- **Material Design Components:** Provides a polished and consistent user interface that aligns with modern design standards.
+
+# 👷‍♂️ Architecture
+
+This app uses [MVVM(Model View View-Model)](https://developer.android.com/topic/architecture#recommended-app-arch) architecture.
+
+![Architecture_Flow](https://user-images.githubusercontent.com/80090908/216841302-97243bc3-3df4-4416-8f1f-dc22398c86b1.png)
 
