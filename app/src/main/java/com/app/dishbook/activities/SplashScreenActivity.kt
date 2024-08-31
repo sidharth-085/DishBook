@@ -12,12 +12,12 @@ import android.widget.TextView
 import com.app.dishbook.R
 
 class SplashScreenActivity : AppCompatActivity() {
-    var topAnimation: Animation ?= null
-    var bottomAnimation: Animation ?= null
+    private var topAnimation: Animation ?= null
+    private var bottomAnimation: Animation ?= null
 
-    var splashImage: ImageView ?= null
-    var splashText: TextView ?= null
-    var splashSlogan: TextView ?= null
+    private var splashImage: ImageView ?= null
+    private var splashText: TextView ?= null
+    private var splashSlogan: TextView ?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

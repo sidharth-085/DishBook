@@ -43,10 +43,6 @@ class SearchFragment : Fragment() {
 
         prepareRecyclerView()
 
-        binding.imgSearch.setOnClickListener {
-            searchMeals()
-        }
-
         observeSearchedMealsLiveData()
 
         var searchJob: Job ?= null

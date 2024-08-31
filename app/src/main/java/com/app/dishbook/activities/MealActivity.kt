@@ -85,7 +85,6 @@ class MealActivity : AppCompatActivity() {
     }
 
     private fun getMealInformationFromIntent() {
-        val intent = intent
         mealId = intent.getStringExtra(MEAL_ID).toString()
         mealName = intent.getStringExtra(MEAL_NAME).toString()
         mealThumb = intent.getStringExtra(MEAL_THUMB).toString()

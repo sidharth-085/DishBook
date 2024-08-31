@@ -21,7 +21,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginEnd="26dp"
+                android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -29,19 +29,20 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3"
+                    android:layout_weight="1"
                     android:fontFamily="@font/myfont"
                     android:text="DishBook"
-                    android:textColor="@color/accent"
+                    android:textColor="@color/purple"
                     android:textSize="@dimen/_25ssp"
                     android:textStyle="bold" />
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/img_search"
                     android:layout_width="@dimen/_42sdp"
                     android:layout_height="@dimen/_42sdp"
+                    android:background="@android:color/transparent"
                     android:contentDescription="search_icon"
-                    android:scaleType="centerCrop"
+                    android:scaleType="centerInside"
                     android:src="@drawable/search_icon" />
 
             </LinearLayout>
@@ -79,7 +80,7 @@
                     android:id="@+id/img_random_meal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/accent"
+                    android:background="@color/purple"
                     android:scaleType="centerCrop"
                     android:contentDescription="random_meal_img" />
 
@@ -91,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/myfont"
-                android:text="Over popular items"
+                android:text="Popular items"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_17ssp"
                 android:textStyle="bold"
