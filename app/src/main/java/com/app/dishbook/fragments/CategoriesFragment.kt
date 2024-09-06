@@ -56,10 +56,6 @@ class CategoriesFragment : Fragment() {
     private fun observeCategories() {
          viewModel.observeCategoryLiveData().observe(viewLifecycleOwner, Observer {categories ->
              val categoriesTillNine = categories.take(12) as MutableList<Category>
-
-             categoriesTillNine.addAll(0, categories.take(12))
-             // taking only 12 because of image size
-
              categoriesAdapter.setCategoryList(categoriesTillNine as ArrayList<Category>)
          })
     }

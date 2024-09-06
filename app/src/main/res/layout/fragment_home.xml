@@ -30,20 +30,31 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_marginTop="2dp"
                     android:fontFamily="@font/myfont"
                     android:text="DishBook"
                     android:textColor="@color/purple"
-                    android:textSize="@dimen/_25ssp"
+                    android:textSize="@dimen/_20ssp"
                     android:textStyle="bold" />
 
                 <ImageButton
-                    android:id="@+id/img_search"
-                    android:layout_width="@dimen/_42sdp"
-                    android:layout_height="@dimen/_42sdp"
-                    android:background="@android:color/transparent"
-                    android:contentDescription="search_icon"
+                    android:id="@+id/contact_button"
+                    android:layout_width="@dimen/_34sdp"
+                    android:layout_height="@dimen/_34sdp"
+                    android:background="@drawable/image_selector_bg"
                     android:scaleType="centerInside"
-                    android:src="@drawable/search_icon" />
+                    android:src="@drawable/ic_contact"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="contact_icon"/>
+
+                <ImageButton
+                    android:id="@+id/img_search"
+                    android:layout_width="@dimen/_34sdp"
+                    android:layout_height="@dimen/_34sdp"
+                    android:background="@drawable/image_selector_bg"
+                    android:contentDescription="search_icon"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_search_home" />
 
             </LinearLayout>
 

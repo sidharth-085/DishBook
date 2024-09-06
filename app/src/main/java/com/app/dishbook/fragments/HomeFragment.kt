@@ -10,6 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.app.dishbook.ContactActivity
 import com.app.dishbook.R
 import com.app.dishbook.activities.CategoryMealsActivity
 import com.app.dishbook.activities.MainActivity
@@ -78,12 +79,17 @@ class HomeFragment : Fragment() {
 
         // search icon click function
 
-        onSearchIconClick()
+        onClickListenersForUIElements()
     }
 
-    private fun onSearchIconClick() {
+    private fun onClickListenersForUIElements() {
         binding.imgSearch.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_searchFragment2)
+        }
+
+        binding.contactButton.setOnClickListener {
+            val intent = Intent(activity, ContactActivity::class.java)
+            startActivity(intent)
         }
     }
 

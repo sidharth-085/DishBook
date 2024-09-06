@@ -21,7 +21,8 @@
         android:paddingEnd="@dimen/_15sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textCursorDrawable="@drawable/custom_cursor" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_search_meals"
