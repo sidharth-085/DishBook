@@ -24,7 +24,7 @@
         android:fontFamily="serif"
         android:text="Contact Us"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/textColor"
         android:textSize="35sp"
         android:textStyle="bold|italic" />
 
@@ -39,7 +39,7 @@
         android:layout_margin="20dp"
         android:text="We value your feedback! Reach out with questions or suggestions through our Contact Us page, and let us enhance your app experience together."
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/textColor"
         android:textSize="20sp" />
 
     <!-- Email Section (Row) -->
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="serif"
             android:text="sidharthkapoor085@gmail.com"
-            android:textColor="@color/black"
+            android:textColor="@color/textColor"
             android:textSize="18sp" />
     </LinearLayout>
 </LinearLayout>

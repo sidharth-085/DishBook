@@ -24,7 +24,7 @@
         android:textSize="@dimen/_11ssp"
         android:text="category"
         android:padding="5dp"
-        android:textColor="@color/black"
+        android:textColor="@color/textColor"
         android:fontFamily="@font/myfont" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

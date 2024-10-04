@@ -10,7 +10,7 @@
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_230sdp"
-        android:backgroundTint="@color/g_black" >
+        android:backgroundTint="@color/instruction_color" >
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/collapsing_tool_bar"
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/button_favorite"
         app:backgroundTint="@color/purple"
-        app:tint="@color/white"
+        app:tint="@color/backgroundColor"
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|end"
         android:layout_marginEnd="@dimen/_10sdp"/>
@@ -80,11 +80,11 @@
                     android:layout_height="wrap_content"
                     android:text="Category: Beef "
                     android:textStyle="bold"
-                    android:textColor="@color/g_black"
+                    android:textColor="@color/instruction_color"
                     android:textSize="@dimen/_13ssp"
                     android:drawableLeft="@drawable/ic_categories"
                     android:drawablePadding="@dimen/_4sdp"
-                    app:drawableTint="@color/g_black"
+                    app:drawableTint="@color/instruction_color"
                     android:layout_marginEnd="@dimen/_10sdp"/>
 
                 <TextView
@@ -93,11 +93,11 @@
                     android:layout_height="wrap_content"
                     android:text="Area: American"
                     android:textStyle="bold"
-                    android:textColor="@color/g_black"
+                    android:textColor="@color/instruction_color"
                     android:textSize="@dimen/_13ssp"
                     android:drawableLeft="@drawable/location_pin"
                     android:drawablePadding="@dimen/_4sdp"
-                    app:drawableTint="@color/g_black" />
+                    app:drawableTint="@color/instruction_color" />
 
             </LinearLayout>
 
@@ -123,7 +123,7 @@
                     android:layout_marginStart="@dimen/_11sdp"
                     android:textSize="@dimen/_20ssp"
                     android:fontFamily="@font/myfont"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textColor"
                     android:textStyle="bold"/>
 
                 <TextView
@@ -131,7 +131,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:text="Recipe"
-                    android:textColor="@color/g_black"
+                    android:textColor="@color/instruction_color"
                     android:textStyle="bold"
                     android:textSize="@dimen/_15ssp"
                     android:fontFamily="@font/myfont"

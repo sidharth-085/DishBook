@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple">#8f5ef1</color>
+
+    <color name="statusBarColor">#7b40ef</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="backgroundColor">#1C1E21</color>
+    <color name="instruction_color">#b6c0d8</color>
+    <color name="searchBoxColor">#D3D3D3</color>
+</resources>

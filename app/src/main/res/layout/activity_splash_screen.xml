@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".presentation.activities.SplashScreenActivity"
-    android:background="@color/white"
+    android:background="@color/backgroundColor"
     android:orientation="vertical"
     android:gravity="center">
 
@@ -22,7 +22,7 @@
         android:text=" DishBook "
         android:textSize="70sp"
         android:fontFamily="@font/bangers"
-        android:textColor="@color/black" />
+        android:textColor="@color/textColor" />
 
     <TextView
         android:id="@+id/slogan"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:text="Cooking is pure joy ! "
         android:textSize="@dimen/_15ssp"
-        android:textColor="@color/black"
+        android:textColor="@color/textColor"
         android:fontFamily="@font/bangers"/>
 
 </LinearLayout>
