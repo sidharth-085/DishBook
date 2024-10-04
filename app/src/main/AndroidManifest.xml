@@ -15,13 +15,13 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".ContactActivity"
+            android:name=".presentation.activities.ContactActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".presentation.activities.MainActivity"
             android:exported="true"></activity>
         <activity
-            android:name=".activities.SplashScreenActivity"
+            android:name=".presentation.activities.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,10 +30,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.MealActivity"
+            android:name=".presentation.activities.MealActivity"
             android:exported="true"></activity>
         <activity
-            android:name=".activities.CategoryMealsActivity"
+            android:name=".presentation.activities.CategoryMealsActivity"
             android:exported="true"></activity>
     </application>
 
